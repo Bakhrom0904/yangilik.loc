@@ -36,9 +36,9 @@
                         <!-- /.post-category -->
                         <h1 class="display-1 mb-4"><?=$new->title;?></h1>
                         <ul class="post-meta mb-5">
-                            <li class="post-date"><i class="uil uil-calendar-alt"></i><span><?=$new->created_at;?></span></li>
-                            <li class="post-author"><a href="#"><i class="uil uil-user"></i><span><?=$new->user->username;?></span></a></li>
-                            <li class="post-comments"><a href="#"><i class="uil uil-eye"></i><span><?=$new->view;?></span></a></li>
+                            <li class="post-date"><i class="uil uil-calendar-alt"></i><span><?=$new->created_at;echo " ";?><?=Yii::t('app',"Yaratilgan vaqti");?></span></li>
+                            <li class="post-author"><a href="#"><i class="uil uil-user"></i><span><?=$new->user->username;?><?=Yii::t('app','Yaratuvchi');?></span></a></li>
+                            <li class="post-comments"><a href="#"><i class="uil uil-eye"></i><span><<?=$new->view;echo " ";?><span><?=Yii::t('app','Ko`rishlar');?></span></a></li>
 
                         </ul>
                         <!-- /.post-meta -->

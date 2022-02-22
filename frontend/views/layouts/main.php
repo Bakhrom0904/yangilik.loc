@@ -77,7 +77,7 @@ AppAsset::register($this);
                                 'size' => \lajax\languagepicker\widgets\LanguagePicker::SIZE_LARGE
                             ]); ?>
                             <li class="nav-item d-none d-md-block">
-                                <a href="./contact.html" class="btn btn-sm btn-primary rounded-pill">Contact</a>
+                                <a href="./contact.html" class="btn btn-sm btn-primary rounded-pill"><?=Yii::t('app','Aloqa');?></a>
                             </li>
                             <li class="nav-item d-lg-none">
                                 <div class="navbar-hamburger"><button class="hamburger animate plain" data-toggle="offcanvas-nav"><span></span></button></div>

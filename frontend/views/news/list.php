@@ -7,7 +7,7 @@
                 <div class="card">
                     <figure class="card-img-top overlay overlay-1 hover-scale"><a href="/news/view?id=<?=$new->id;?>"><span class="bg"></span><img src="<?=$new->img;?>" alt=""></a>
                         <figcaption>
-                            <h5 class="from-top mb-0">Read More</h5>
+                            <h5 class="from-top mb-0"><?=Yii::t('app','Ko`proq o`qish');?></h5>
                         </figcaption>
                     </figure>
                     <div class="card-body">
@@ -27,10 +27,10 @@
                     <!--/.card-body -->
                     <div class="card-footer">
                         <ul class="post-meta d-flex mb-0">
-                            <li class="post-date"><i class="uil uil-calendar-alt"></i><span><?=$new->created_at;?></span></li>
-                            <li class="post-author"><a href="#"><i class="uil uil-user"></i><span><?=$new->user->username;?></span></a></li>
-                            <li class="post-comments"><a href="#"><i class="uil uil-eye"></i><?=$new->view;?><span> Views</span></a></li>
-                            <li class="post-likes ms-auto"><a href="#"><i class="uil uil-heart-alt"></i>3</a></li>
+                            <li class="post-date"><i class="uil uil-calendar-alt"></i><span><?=$new->created_at;echo " ";?><?=Yii::t('app',"Yaratilgan vaqti");?></span></li>
+                            <li class="post-author"><a href="#"><i class="uil uil-user"></i><span><?=$new->user->username;?><?=Yii::t('app','Yaratuvchi');?></span></a></li>
+                            <li class="post-comments"><a href="#"><i class="uil uil-eye"></i><?=$new->view;echo " ";?><span><?=Yii::t('app','Ko`rishlar');?></span></a></li>
+
                         </ul>
                         <!-- /.post-meta -->
                     </div>
